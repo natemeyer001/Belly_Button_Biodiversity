@@ -99,10 +99,7 @@ function buildCharts(sample) {
         value: washingFreq,
         type: "indicator",
         mode: "gauge+number",
-        title: {
-          text: "Weekly Belly Button Washing Frequency",
-          subtitle: { text: "Scrubs per Week", visible: true}
-        },
+        title: {text: "Weekly Belly Button Washing Frequency"},
         gauge: {
           axis: {range: [0,10]},
           bar: {color: "black"},
