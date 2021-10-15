@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bellybutton Biodiversity</title>
+  <title style="font-">Bellybutton Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
@@ -14,15 +14,15 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12 jumbotron text-center">
-        <h1>Belly Button Biodiversity Dashboard</h1>
-        <p>Use the interactive charts below to explore the dataset</p>
+        <h1> <i>Belly Button Biodiversity Dashboard</i></h1>
+        <p><i>Use the interactive charts below to explore the dataset</i></p>
       </div>
     </div>
     <div class="row">
+      <p>The filter on the left side of the page allows you to choose a new test subject besides 940. When a new id is selected, the page will automatically reload with the 3 plots updated with that subject's data. The first graph is a gauge chart that displays how often the test subject washed their belly button. To the right of that is a horizontal bar chart displaying the most frequent bacteria cultures found in that subject. Note: you can hover over the bacteria to get the count as well as the name. Lastly, on the bottom is a buble chart of the bacteria cultures. This chart also displays the count and name when you hover over a circle. The size of the circles signifies the count of the bacteria culture, where the larger the circle, the higher the bacteria count.</p>
       <div class="col-md-2">
         <div class="well">
           <h5>Test Subject ID No.:</h5>
-          <!-- <select id="selDataset"></select> -->
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
@@ -33,10 +33,10 @@
         </div>
       </div>
       <div class="col-md-5">
-        <div id="bar"></div>
+        <div id="gauge"></div>
       </div>
       <div class="col-md-5">
-        <div id="gauge"></div>
+        <div id="bar"></div>
       </div>
     </div>
     <div class="row">
